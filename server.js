@@ -170,7 +170,7 @@ app.use('*', (req, res) => {
 });
 
 // Initialize database
-const Database = require('./utils/database');
+const database = require("./tyt-ayt-backend-only/utils/database");
 const RAGSystem = require('./utils/rag');
 const Logger = require('./utils/logger');
 

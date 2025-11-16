@@ -65,12 +65,12 @@ app.use('/api/', limiter);
 app.use(express.static(path.join(__dirname)));
 
 // Import route modules
-const chatRoutes = require('./routes/chat');
-const youtubeRoutes = require('./routes/youtube');
-const pythonRoutes = require('./routes/python');
-const ragRoutes = require('./routes/rag');
-const userRoutes = require('./routes/user');
-const healthRoutes = require('./routes/health');
+const chatRoutes = require('./tyt-ayt-backend-only/routes/chat');
+const youtubeRoutes = require('./tyt-ayt-backend-only/routes/youtube');
+const pythonRoutes = require('./tyt-ayt-backend-only/routes/python');
+const ragRoutes = require('./tyt-ayt-backend-only/routes/rag');
+const userRoutes = require('./tyt-ayt-backend-only/routes/user');
+const healthRoutes = require('./tyt-ayt-backend-only/routes/health');
 
 // Legacy static data endpoints (for backward compatibility)
 app.get('/data/:file', async (req, res) => {
